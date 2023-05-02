@@ -1,32 +1,27 @@
-function randButton(){
-    const buttons = ["red","green","blue","white"]
-    const randomIndex = Math.floor(Math.random() * buttons.length);
-    const randomElement = buttons[randomIndex];
-    return randomElement
+var buttonColours = ["red", "blue", "green", "white"];
+var userClickedPattern = []
+var gamePattern = [];
+
+function nextSequence() {
+
+  var randomNumber = Math.floor(Math.random() * 4);
+  var randomChosenColour = buttonColours[randomNumber];
+  gamePattern.push(randomChosenColour);
+  $("#" + randomChosenColour).fadeIn(100).fadeOut(100).fadeIn(100);
+  playSound("sounds/" + randomChosenColour + ".mp3")
+  
+}
+function playSound(sound){
+    var audio = new Audio(sound);
+    audio.play();
 }
 
-var clickedButtons = [];
 
 $(".square").click(function (e) { 
-    var button = $(e.target);
-    var id = button.attr("id");
-    const audio = new Audio("./sounds/" + id + ".mp3");
-    audio.play()
-    button.addClass("clicked");
-    setTimeout(() => {
-        button.removeClass("clicked");
-    }, 20);
+    var button = $(e.target)
+    var userChosenColour = button.attr("id") 
+    userClickedPattern.push(userChosenColour)
+    console.log(userClickedPattern)
+    playSound("sounds/" + userChosenColour + ".mp3")
     
-    console.log(id);
-    if(clickedButtons.length != 0){
-        console.log(clickedButtons[0].attr("id"));
-    }
-});
-$(document).keydown(function (e) { 
-    if(e.key == "a"){ 
-       $("h1").text("Level 1");
-        var button = $("." + randButton());
-        button.click();
-        clickedButtons.push(button);
-    }
 });
