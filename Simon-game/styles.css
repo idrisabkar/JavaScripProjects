@@ -1,5 +1,6 @@
 body{
     background-color: rgb(60, 72, 107);
+    text-align: center;
 }
 #level-title {
     font-family: 'Press Start 2P', cursive;
@@ -14,6 +15,7 @@ body{
 .squares{
     text-align: center;
     width: 35rem;
+    margin: 0 auto;
 }
 .square{
     display: inline-block;
@@ -45,3 +47,21 @@ body{
     box-shadow: 0 0 20px white;
     background-color: grey;
 }
+
+.gameOver{
+    background-color: red;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
