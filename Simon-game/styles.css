@@ -9,17 +9,17 @@ body{
   }
 
 .header{
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .squares{
     text-align: center;
-    width: 40rem;
+    width: 35rem;
 }
 .square{
     display: inline-block;
     margin: 7px;
-    height: 13rem;
-    width: 13rem;
+    height: 10rem;
+    width: 10rem;
     background-color: blue;
     border-width: 5px;
     border-width: 3px;
