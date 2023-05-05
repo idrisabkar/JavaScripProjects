@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+footer{
+    position: relative;
+    bottom: 0;
+    margin : 20px 0px 0px 0px;
+    width: 100%;
+    background-color: burlywood;
+    padding: 3rem;
+    position:  relative bottom;
+}
+
+.form{
+    width: 30%;
+    margin: auto;
+}
+.header{
+    margin-bottom: 4rem;
+}
