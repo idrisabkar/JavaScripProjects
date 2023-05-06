@@ -46,3 +46,12 @@ $(document).ready(function () {
         }, 1000);
     });
 });
+$(document).ready(function() {
+    $("#like").click(function() {
+      $("#like-popup").fadeIn();
+      setTimeout(function() {
+        $("#like-popup").fadeOut();
+      }, 1000);
+    });
+  });
+  
