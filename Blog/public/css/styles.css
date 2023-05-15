@@ -1,0 +1,90 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  white-space: pre-line;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 100px;
+  word-wrap: break-word;
+  word-break: break-all;
+}
+
+.card {
+  text-align: center;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #ced4da;
+  padding: 10px;
+  width: 260px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 5px 1px 5px 1px rgb(199, 197, 197);
+}
+
+.card:hover{
+  box-shadow: none;
+  border-width: 0;
+}
+
+.card-body {
+  flex-grow: 1;
+}
+
+.card-footer {
+  margin-top: auto;
+}
+
+.card-footer button {
+  position: absolute;
+  /* make buttons absolutely positioned */
+  bottom: 5px;
+  /* keep them at the bottom with a small margin */
+  width: 100%; /* occupy the full width of the card */
+}
+
+.container-fluid {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: none !important;
+  margin-bottom: none !important;
+  font-size: none !important;
+  letter-spacing: none !important;
+}
+
+.navbar-nav li a:hover {
+  color: #1abc9c !important;
+}
+
+.footer-padding {
+  padding-bottom: 60px;
+}
+
+.footer {
+  position: fixed;
+  text-align: center;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #1abc9c;
+  color: #fff;
+  line-height: 60px;
+}
+
+#add{
+ margin-top: 20px;
+}
